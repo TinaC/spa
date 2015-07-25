@@ -3,7 +3,7 @@
  * Root namespace styles
 */
 
-/** Begin reset */
+/** Begin reset 重置大多数浏览器默认行为*/
   * {
     margin  : 0;
     padding : 0;
@@ -12,6 +12,7 @@
     box-sizing         : border-box;
   }
   h1,h2,h3,h4,h5,h6,p { margin-bottom : 10px; }
+  /*该属性用于声明列表标志相对于列表项内容的位置*/
   ol,ul,dl { list-style-position : inside;}
 /** End reset */
 
@@ -31,7 +32,7 @@
   }
 /** End standard selectors */
 
-/** Begin spa namespace selectors */
+/** Begin spa namespace selectors 定义选择器的名字空间*/
   #spa {
     position : absolute;
     top      : 8px;
@@ -48,7 +49,7 @@
   }
 /** End spa namespace selectors */
 
-/** Begin utility selectors */
+/** Begin utility selectors 为其他所有模块提供通用选择器*/
   .spa-x-select {}
   .spa-x-clearfloat {
     height     : 0      !important;

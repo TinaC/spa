@@ -12,7 +12,7 @@
 /*global $, spa */
 
 spa.shell = (function () {
-  //---------------- BEGIN MODULE SCOPE VARIABLES --------------
+  //---------------- BEGIN MODULE SCOPE VARIABLES 静态配置值--------------
   var
     configMap = {
       anchor_schema_map : {
@@ -59,6 +59,7 @@ spa.shell = (function () {
 
   //--------------------- BEGIN DOM METHODS --------------------
   // Begin DOM method /setJqueryMap/
+  // 用来缓存jQuery集合，jqueryMap缓存的用途是可以大大减少jQuery对文档的便利次数，能够提高性能
   setJqueryMap = function () {
     var $container = stateMap.$container;
 
